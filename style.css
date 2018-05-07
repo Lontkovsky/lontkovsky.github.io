@@ -187,6 +187,9 @@ ul{
     display: table-cell;
     vertical-align: middle;
 }
+.slide_web_text{
+	margin-top:50px;
+}
 .slide_web_text h1{
     color: #fff;
     margin: 0px;
@@ -1360,7 +1363,7 @@ footer{
 /* ========= tablet device ============*/
 @media(min-width:768px) and (max-width:1279px) {
     .navbar-default {
-        top: 4%;
+        top: 0%;
     }
     #slide_web{
         overflow: hidden;
