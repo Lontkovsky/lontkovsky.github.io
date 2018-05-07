@@ -23,25 +23,81 @@
    <script src="assests/js/modernizr-2.8.3.min.js"></script>
    
    <link rel="stylesheet" href="dist/css/swiper.min.css">
-</head>
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+	  height: 100%;
+    }
+    body {
+      background: url(assests/img/work.jpg);;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
 <body>
-<!-- header -->
-	<div class="banner">
-		<div class="container">
-				
-					<!-- script-for-nav -->
-					
-				<!-- script-for-nav -->
-				
-				<div class="banner-info">
-				<h1 style="color: #000; font-size: 40px;">Спасибо! </h1>
-				<h2>Ваша заявка принята!</h2>
-				<h3>Наш менеджер свяжется с Вами в ближайшее время.</h3>
-				
-				<a href="index.html"><button>На главную</button></a>
-				
-		</div>
-	</div>
+<div class="banr_table">
+							   <div class="slide_web_tabel_cell">
+								   <div class="slide_web_text">
+									   <h1 style="margin-top:-320px;">Your application is accepted for processing!<br> I will contact you soon!</h1>
+										
+									   <!-- Swiper -->
+  <div class="swiper-container" style="margin-top:15px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(assests/img/work/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(assests/img/work/2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(assests/img/work/3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(assests/img/work/4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(assests/img/work/5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(assests/img/work/6.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+									   <a href="https://lontkovsky.github.io/"><button style="margin-top: 25px;">To Main Page</button></a>
+								   </div>
+							   </div>
+						   </div>
+
+  
+
+  <!-- Swiper JS -->
+  <script src="dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
 
 </body>
 

@@ -16,11 +16,11 @@
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Отправитель \r\n"; //Наименование и почта отправителя
+        $headers .= "From: Cообщение с сайта \r\n"; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 		
 		/* Redirect browser */
-header("Location: thanks.html");
+header("Location: https://lontkovsky.github.io/thanks.html");
 /* Make sure that code below does not get executed when we redirect. */
 exit;
 
